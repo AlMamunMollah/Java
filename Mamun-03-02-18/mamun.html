@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    First Name:
+<input type="text" id="fname" placeholder="first Name"/><br>
+    Last Name:
+<input type="text" id="lname" placeholder="last Name"/><br>
+    Family Name:
+<input type="text" id="faname" placeholder="family Name"/><br>
+   
+    <button onclick="getfullname()">Show Name</button>
+<script type="text/javascript">
+    function getfullname() {
+        var first = document.getElementById("fname").value;
+        var last = document.getElementById("lname").value;
+        var thard = document.getElementById("faname").value;
+        
+
+        var fullname = first + " " + last + " " + thard+" ";
+        alert(fullname);
+    }
+</script>
+</body>
+</html>
